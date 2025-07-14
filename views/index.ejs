@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopbseh - Bán Acc Roblox</title>
+  </head>
+  <body>
+    <h1>Danh sách Acc Roblox</h1>
+    <ul>
+      <% accs.forEach(acc => { %>
+        <li><%= acc.username %> | <%= acc.password %></li>
+      <% }) %>
+    </ul>
+
+    <h2>Nạp Thẻ</h2>
+    <form method="POST" action="/napthe">
+      <input name="telco" placeholder="Loại thẻ (Viettel, Mobi...)">
+      <input name="code" placeholder="Mã thẻ">
+      <input name="serial" placeholder="Serial">
+      <input name="amount" placeholder="Mệnh giá">
+      <button type="submit">Nạp</button>
+    </form>
+  </body>
+</html>
